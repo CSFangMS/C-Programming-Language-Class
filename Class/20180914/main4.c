@@ -5,14 +5,14 @@
 
 int main(int argc, char *argv[]) {
 	int day, mon, year;
-	printf("½Ð¿é¤J§Aªº¥X¥Í¦~¥÷\n");
+	printf("è«‹è¼¸å…¥ä½ çš„å‡ºç”Ÿå¹´ä»½\n");
 	scanf("%d", &year);
-	printf("§Úªº¥X¥Í¦~¥÷:%d\n\n", year);
-	printf("½Ð¿é¤J§Aªº¥X¥Í¤ë¥÷\n");
+	printf("æˆ‘çš„å‡ºç”Ÿå¹´ä»½:%d\n\n", year);
+	printf("è«‹è¼¸å…¥ä½ çš„å‡ºç”Ÿæœˆä»½\n");
 	scanf("%d", &mon);
-	printf("½Ð±µµÛ¿é¤J§Aªº¥X¥Í¤é´Á\n");
+	printf("è«‹æŽ¥è‘—è¼¸å…¥ä½ çš„å‡ºç”Ÿæ—¥æœŸ\n");
 	scanf("%d", &day);
-	printf("§Úªº¥Í¤é¬O:%d¦~ %d¤ë %d¤é\n", year, mon, day);
+	printf("æˆ‘çš„ç”Ÿæ—¥æ˜¯:%då¹´ %dæœˆ %dæ—¥\n", year, mon, day);
 	system("pause");
 	return 0;
 }
