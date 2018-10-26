@@ -7,32 +7,32 @@
 int main(int argc, char *argv[]) {
 	int com, player;
 	
-	/* ª±®a¿é¤J³¡¤À */ 
-	printf("½Ğ¿é¤J1-3ªº¼Æ¦r¡A1=°Å¤M¡B2=¥ÛÀY¡B3=¥¬\n");
+	/* ç©å®¶è¼¸å…¥éƒ¨åˆ† */ 
+	printf("è«‹è¼¸å…¥1-3çš„æ•¸å­—ï¼Œ1=å‰ªåˆ€ã€2=çŸ³é ­ã€3=å¸ƒ\n");
 	scanf("%d", &player);
 	if(player = 1)
-		printf("§A¥X°Å¤M!\n");
+		printf("ä½ å‡ºå‰ªåˆ€!\n");
 	else if(player = 2)
-		printf("§A¥X¥ÛÀY!\n");
+		printf("ä½ å‡ºçŸ³é ­!\n");
 	else if(player = 3)
-		printf("§A¥X¥¬!\n");
+		printf("ä½ å‡ºå¸ƒ!\n");
 	else
-		printf("½Ğ¿é¤J1-3ªº¼Æ¦r¡C");
+		printf("è«‹è¼¸å…¥1-3çš„æ•¸å­—ã€‚");
 
-	/* ¹q¸£ÀH¾÷³¡¤À*/
+	/* é›»è…¦éš¨æ©Ÿéƒ¨åˆ†*/
 	srand(time(NULL));
 	com = rand() % 3 + 1;
 	printf("com = %d", com);
 
-	/* ª±®a»P¹q¸£¤ñ¸û */
+	/* ç©å®¶èˆ‡é›»è…¦æ¯”è¼ƒ */
 	if(com > player)
-		printf("§A¿é¤F!");
+		printf("ä½ è¼¸äº†!");
 	
 	else if(com = player)
-		printf("¥­¤â!");
+		printf("å¹³æ‰‹!");
 	
 	else
-		printf("§AÄ¹¤F!");
+		printf("ä½ è´äº†!");
 	
 	
 	system("pause");
