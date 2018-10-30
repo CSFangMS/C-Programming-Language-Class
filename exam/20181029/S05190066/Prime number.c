@@ -1,6 +1,6 @@
-// 
-// 
-// 
+// Prime number
+// Input: A positive integer
+// Output: To check whether it is a prime number or not
 // Made by Stanley Fang
 #include <stdio.h>
 #include <stdlib.h>
