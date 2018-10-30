@@ -1,6 +1,14 @@
-// greatest common divisor/lowest common multiple
-// 
+// greatest common divisor and lowest common multiple
+// Input:
+// First line: Enter a single integer n to represent the number of positive integers to enter
+// Second line: The input depends on the number of n to determine the need to enter a few positive integers,
+// separated by a blank key
+// Output:
+// The largest common factor and the least common multiple are separated by a blank key.
 // Made by Stanley Fang
+
+// warning: This code is not completed
+
 #include <stdio.h>
 #include <stdlib.h>
 
