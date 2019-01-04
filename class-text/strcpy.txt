@@ -1,0 +1,22 @@
+#include<stdio.h>
+// Programs checked on Linux with gcc 
+char *mystrcpy(char *dest, char *src){
+	int i=0;
+	while(src[i]!='\0'){
+		dest[i]=src[i];
+		i++;
+	}
+	dest[i]='\0';
+	return(dest);
+}
+int main()
+{
+
+	char *dst1=NULL;//or any other string
+	char const src1[]="SOURCE";
+	
+	char *mystr=mystrcpy(&dst1,&src1);
+	printf("%s\n",mystr);
+        return 0;
+
+}

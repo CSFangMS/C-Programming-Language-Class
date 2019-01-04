@@ -1,0 +1,5 @@
+int my_strcmp(char *a, char *b)
+{
+    while (*a && *b && *a == *b) { ++a; ++b; }
+    return (unsigned char)(*a) - (unsigned char)(*b);
+}

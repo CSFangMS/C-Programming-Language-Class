@@ -1,0 +1,51 @@
+// Example program for first problem on list -- "string length"
+// Notice that the given string MUST be terminated by NULL for this solution to work.
+// Notice that other solutions are possible!
+
+#include <stdio.h>
+#define SIZE 100
+
+//////////////////////////////////////////
+// Function name: mystrlen
+// Input parameter: 
+//      str: a string (character array)
+// Returns:
+//      the number of characters in str,
+//         not counting the NULL character
+int mystrlen(char *str)
+{
+    int len = 0;
+    int i;
+    
+    for (i=0; str[i] != 0; i++) 
+    {
+        len++;
+    }
+    return(len);
+}
+
+int main(void)
+{
+    // my array for the string
+    char myString[SIZE];
+    
+    int stringLength;
+    
+    printf("Example program to test mystrlen\n");
+    
+    // First read in an input string
+    if (fgets(myString, SIZE, stdin)) 
+    {
+        // input has worked, do something with data
+        stringLength = mystrlen(myString);
+        
+        printf("Read in the string \"%s\", length calculated as %d\n",
+                   myString, stringLength);
+                   
+    } else 
+    {
+        printf("Error reading in the string!\n");
+    }
+    
+    return 0;
+}
